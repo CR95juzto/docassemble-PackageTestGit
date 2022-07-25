@@ -1,0 +1,22 @@
+metadata:
+  title: Default playground interview
+  short title: Test
+  comment: This is a learning tool.  Feel free to write over it.
+---
+objects:
+  - client: Individual
+question: |
+  What is your date of birth?
+fields:
+  - Date of Birth: client.birthdate
+    datatype: date
+---
+question: |
+  ¿SIRVE ESTA PREGUNTA?
+fields:
+  - Prueba: client.prueba
+code: |
+  if client.age_in_years() < 18:
+    benefits = "CHIP"
+  else:
+    benefits = "Medicaid"

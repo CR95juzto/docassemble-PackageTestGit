@@ -7,7 +7,7 @@ objects:
   - client: Individual
 ---
 question: |
-  What is your name?
+  ¿CUÁL ES TU NOMBRE DE PRUEBA?
 fields:
   - First Name: client.name.first
   - Middle Name: client.name.middle
@@ -22,6 +22,11 @@ question: |
 fields:
   - Date of Birth: client.birthdate
     datatype: date
+---
+question: |
+  ¿SIRVE ESTA PREGUNTA?
+fields:
+  - Prueba: client.prueba
 ---
 mandatory: True
 question: |
